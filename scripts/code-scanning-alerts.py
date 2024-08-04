@@ -3,16 +3,21 @@ import os
 
 # Set up GitHub API access
 GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
-REPO_NAME = 'your_org/your_repo'  # Format: 'org_name/repo_name'
-HEADERS = {'Authorization': f'token {GITHUB_TOKEN}'}
+REPO_NAME = 'ghas'  
+OWNER = 'Atmosera-adv-sec-prep'
+HEADERS = {
+    'Authorization': f'token {GITHUB_TOKEN}',
+    'Accept': 'application/vnd.github.v3+json'
+}
 
 def fetch_code_scanning_alerts():
-    url = f'https://api.github.com/repos/{REPO_NAME}/code-scanning/alerts'
+    url = f'https://api.github.com/repos/{OWNER}/{REPO_NAME}/code-scanning/alerts'
     response = requests.get(url, headers=HEADERS)
     if response.status_code == 200:
         return response.json()
     else:
         print(f'Failed to fetch alerts: {response.status_code}')
+        print(f'Response content: {response.content}')
         return []
 
 def categorize_alerts(alerts):
@@ -23,7 +28,7 @@ def categorize_alerts(alerts):
     return categorized
 
 def create_issue_for_alert(alert):
-    url = f'https://api.github.com/repos/{REPO_NAME}/issues'
+    url = f'https://api.github.com/repos/{OWNER}/{REPO_NAME}/issues'
     title = f"Code Scanning Alert: {alert['rule']['id']}"
     body = f"Found a {alert['rule']['severity']} severity issue in {alert['tool']['name']}.\n\nDescription: {alert['rule']['description']}"
     payload = {'title': title, 'body': body}
