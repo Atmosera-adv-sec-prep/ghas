@@ -1,0 +1,29 @@
+name: Security Scan
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '6.0.x' # Adjust the version as needed
+
+    - name: Restore dependencies
+      run: dotnet restore
+
+    - name: Run SecurityCodeScan
+      run: dotnet build /p:SecurityCodeScanConfigFile=./SecurityCodeScan.config
