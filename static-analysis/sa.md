@@ -1,3 +1,5 @@
+How do I generate a SARIF report and upload it to GitHub using GitHub Actions?
+
 ## Step 1: Generate SARIF Report
 
 Many static analysis tools support generating SARIF reports. Here are examples for some popular tools:
