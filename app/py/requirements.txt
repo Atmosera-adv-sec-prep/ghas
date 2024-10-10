@@ -33,7 +33,7 @@ parso==0.8.4
 pillow==10.4.0
 platformdirs==4.2.2
 prompt_toolkit==3.0.46
-psutil==5.9.8
+psutil==6.0.0
 pure-eval==0.2.2
 pyparsing==3.1.2
 python-dateutil==2.9.0.post0
