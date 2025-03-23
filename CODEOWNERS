@@ -2,7 +2,7 @@
 * @andrew-scoppa
 
 # Notify Atmosera-adv-sec-prep/devs for any files in the 'app' folder or its subfolders
-/app/**/* @Atmosera-adv-sec-prep/devs
+app/**/* @Atmosera-adv-sec-prep/devs
 
 # Notify Atmosera-adv-sec-prep/sec-man if '.github/dependabot.yml' is affected
 .github/dependabot.yml @Atmosera-adv-sec-prep/sec-man
