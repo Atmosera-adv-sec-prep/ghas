@@ -1,7 +1,6 @@
 # GHAS Walkthrough
 
 This repository leverages GitHub Advanced Security (GHAS) to demonstrate it's core functionality and features.
-Consider the sections below as a simple lab walkthrough of the various features of GHAS, how to find them, and how to enable them.
 
 Items with a green check (✅) are the specific learning objectives for students. If you are comfortable with all these items, you should have a good understanding of how to work with GHAS in an effective manner.
 
@@ -9,19 +8,14 @@ Items with a green check (✅) are the specific learning objectives for students
 
 In order to run through the features, simply fork this repository and enable the features you want to test. For quick testing you can fork this on your personal account and keep the visibility public. Most GHAS features are free for public repositories.
 
-> All subsequent sections assume you have following these steps:
-
-1. Fork the repository. 
-2. In your fork, go to **Settings** > **Code Security & analysis** and enable _all_ the security features.
-
 **References**:
 
 * [Managing security and analysis settings for your repository](https://docs.github.com/en/enterprise-cloud@latest/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository)
 * [Quick start for securing your repository](https://docs.github.com/en/enterprise-cloud@latest/code-security/getting-started/quickstart-for-securing-your-repository)
 * [Managing security an analysis settings for your organization](https://docs.github.com/en/enterprise-cloud@latest/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-security-and-analysis-settings-for-your-organization)
 
-- ✅ Walkthrough repository level GHAS settings.
-- ✅ Walkthrough organization level GHAS settings.
+- ✅ Review repository level GHAS settings.
+- ✅ Review organization level GHAS settings.
 
 # Secrets Scanning
 
@@ -135,7 +129,7 @@ See also [About dependabot version updates](https://docs.github.com/en/code-secu
 
 > NOTE: The reported licenses are only as good as the package repositories are that report this. It very common for licenses to be misreported or not reported at all.
 
-- ✅ Walkthrough the Insights > Dependency Graph for this repository. Do you understand the difference between the Dependencies, Dependents and Dependabot views?
+- ✅ Review the Insights > Dependency Graph for this repository. Do you understand the difference between the Dependencies, Dependents and Dependabot views?
 
 # Third Party Code Scanning
 
