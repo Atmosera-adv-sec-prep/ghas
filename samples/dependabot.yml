@@ -12,7 +12,7 @@ updates:
     assignees:
       - "andrew-scoppa"
     reviewers:
-      - "Atmosera-adv-sec-prep/sec-man"
+      - "@Atmosera-adv-sec-prep/sec-man"
     allow:
       - dependency-name: "*"
     commit-message:
@@ -28,7 +28,7 @@ updates:
     assignees:
       - "andrew-scoppa"
     reviewers:
-      - "andrew-scoppa"
+      - "@Atmosera-adv-sec-prep/sec-man"
     allow:
       - dependency-name: "*"
     commit-message:
