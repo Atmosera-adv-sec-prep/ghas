@@ -15,9 +15,6 @@ updates:
       - "Atmosera-adv-sec-prep/sec-man"
     allow:
       - dependency-name: "*"
-        update-types:
-          - "version-update:semver-minor"
-          - "version-update:semver-patch"
     commit-message:
       # Prefix all commit messages with "Python: "
       prefix: "python"
@@ -34,9 +31,6 @@ updates:
       - "andrew-scoppa"
     allow:
       - dependency-name: "*"
-        update-types:
-          - "version-update:semver-minor"
-          - "version-update:semver-patch"
     commit-message:
       # Prefix all commit messages with "npm: "
       prefix: "npm"
