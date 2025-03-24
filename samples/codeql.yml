@@ -33,7 +33,6 @@ jobs:
       with:
         languages: ${{ matrix.language }} # Initialize CodeQL for the specified languages
         queries: +security-extended,security-and-quality # Include additional security queries
-        paths: app/js app/py # Specify the paths to analyze
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3 # Run the CodeQL analysis
