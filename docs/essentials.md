@@ -10,6 +10,7 @@
 6. **Document Code and Processes**: Maintain clear documentation for code, processes, and security practices.
 7. **Use Descriptive Commit Messages**: Write clear and descriptive commit messages to make the project history easier to understand.
 8. **Limit Access Permissions**: Grant the least amount of access necessary to collaborators and use teams to manage permissions.
+9. **Have a SECURITY.md File**: Include a SECURITY.md file in your repository to outline how to report security vulnerabilities.
 
 ## Security Essentials
 
